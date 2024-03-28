@@ -12208,6 +12208,11 @@ a.tabnav-extra:hover {
   transition: color 0.3s;
 }
 
+header {
+  position: relative;
+  z-index: 9998;
+}
+
 .blockquote {
   display: block;
   font-size: 80%;

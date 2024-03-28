@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang='en'>
+<html>
   <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -34,6 +34,7 @@
     <meta property='og:image:width' content='1196'>
     <meta property='og:image:height' content='629'>
     <meta property='og:image:type' content='image/png'>
+    <meta property='og:image:alt' content='GitHub Campus Experts enrich the technology communities on their campuses.'>
 
     <meta property='twitter:card' content='summary_large_image'>
     <meta property='twitter:title' content='GitHub Campus Experts'>
@@ -43,17 +44,21 @@
       property='twitter:description'
       content='GitHub Campus Experts enrich the technology communities on their campuses.'
     >
+    <meta
+      property='twitter:image:alt'
+      content='GitHub Campus Experts enrich the technology communities on their campuses.'
+    >
   </head>
 
   <body>
-    <a href='#start-of-content' class='js-skip-to-content bg-blue text-white p-2 show-on-focus'>Skip to content</a>
+    <!-- <div class="px-4 mb-6 clearfix box-shadow"> -->
     <header
       id='navbar'
       class='p-responsive mb-5 text-white text-center text-lg-left d-lg-flex flex-items-center flex-justify-between'
       style='background-color:#D71E3C'
     >
       <div class='pt-3 py-lg-3 d-md-flex flex-items-center flex-justify-center'>
-        <a href='/preview-template/campus-experts/campus-experts.github.io/pr/3593/' class='no-underline' aria-label='GitHub Campus Experts homepage'>
+        <a href='/preview-template/campus-experts/campus-experts.github.io/pr/3593/' class='no-underline'>
           <svg
             class='pr-md-2'
             version='1.1'
@@ -136,16 +141,41 @@
         </a>
       </div>
       <nav class='pb-3 py-lg-3'>
+        <a href='/explore' class='f4 text-white px-2 px-lg-3'>Explore</a>
         <a href='https://education.github.com/experts' class='f4 text-white px-2 px-lg-3'>Apply</a>
+        <div class='subnav-search d-inline-block'>
+          <form class='position-relative' id='search-form' autocomplete='off' action='/preview-template/campus-experts/campus-experts.github.io/pr/3593/'>
+            <input
+              type='search'
+              name='search-text'
+              class='form-control subnav-search-input w-100 input-block'
+              id='search-text'
+              placeholder='Find an expert'
+              value=''
+              aria-label='Search site'
+            >
+
+            <svg
+              height='16'
+              class='octicon octicon-search subnav-search-icon'
+              viewBox='0 0 16 16'
+              version='1.1'
+              width='16'
+              aria-hidden='true'
+            >
+              <path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path>
+            </svg>
+            <div style='visibility: hidden' id='search-result' class='bg-gray-light search'></div>
+          </form>
+        </div>
       </nav>
       <script src='https://cdn.usefathom.com/script.js' data-spa='auto' data-site='RRODUMSW' defer></script>
-      <script src='/preview-template/campus-experts/campus-experts.github.io/pr/3593/assets/skip_to_main.js' type='text/javascript'></script>
     </header>
+    <div id='header-container'></div>
   </body>
 </html>
 
 
-<div id='start-of-content' class='show-on-focus'></div>
 <div role='main'>
   <div class='clearfix content'>
     <div class='bg-gray-light mt-md-6 py-md-6 border-bottom'>
@@ -153,6 +183,20 @@
     <h3 class='alt-h2 py-2 my-3'>Campus Expert Alumni</h3>
     <div class='d-md-flex flex-wrap flex-items-stretch gutter-md'>
       
+      
+        <div class='col-md-6 col-lg-4 mb-3 mb-md-4'>
+          <div class='d-block uni-box no-underline mb-2 bg-white border rounded-1 box-shadow text-center'>
+            <div class='py-4 px-3'>
+              <a
+                href='/preview-template/campus-experts/campus-experts.github.io/pr/3593/NitishKumar06'
+                class='text-center text-gray-dark no-underline link-hover-blue'
+              >
+                <img class='d-inline block circle mb-1' height='75' src='https://avatars.githubusercontent.com/NitishKumar06'>
+                <p class='h4 text-center'>@NitishKumar06</p>
+              </a>
+            </div>
+          </div>
+        </div>
       
         <div class='col-md-6 col-lg-4 mb-3 mb-md-4'>
           <div class='d-block uni-box no-underline mb-2 bg-white border rounded-1 box-shadow text-center'>
@@ -3984,13 +4028,67 @@
 </div>
 
 <footer class='mt-3 mb-3 text-center'>
-  <h2 class='sr-only'>Footer</h2>
   <div class='container-lg py-3 px-1 mx-auto'>
     <div class='text-gray columns m-0'>
-      <p class='v-align-middle'>
-        <a class='text-small px-2' href='https://education.github.com/experts/terms'>Terms of service</a>
-        <a class='text-small px-2' href='https://education.github.com/experts/'>About</a>
-      </p>
+      <div class='column one-half p-0'>
+        <p class='v-align-middle'>
+          <a class='text-small px-2' href='https://education.github.com/experts/terms'>Terms of service</a>
+          <a class='text-small px-2' href='https://education.github.com/experts/'>About</a>
+        </p>
+      </div>
+      <div class='column one-half p-0'>
+        <svg
+          height='20'
+          class='octicon octicon-code v-align-middle mr-1'
+          aria-label='code'
+          viewBox='0 0 14 16'
+          version='1.1'
+          width='17'
+          role='img'
+        >
+          <path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path>
+        </svg>
+        with
+        <svg
+          height='20'
+          class='octicon octicon-heart v-align-middle mx-1'
+          aria-label='love'
+          viewBox='0 0 12 16'
+          version='1.1'
+          width='15'
+          role='img'
+        >
+          <path d="M11.2 3c-.52-.63-1.25-.95-2.2-1-.97 0-1.69.42-2.2 1-.51.58-.78.92-.8 1-.02-.08-.28-.42-.8-1-.52-.58-1.17-1-2.2-1-.95.05-1.69.38-2.2 1-.52.61-.78 1.28-.8 2 0 .52.09 1.52.67 2.67C1.25 8.82 3.01 10.61 6 13c2.98-2.39 4.77-4.17 5.34-5.33C11.91 6.51 12 5.5 12 5c-.02-.72-.28-1.39-.8-2.02V3z"></path>
+        </svg>
+        by
+        <a href='https://github.com'>
+          <svg
+            height='20'
+            class='octicon octicon-mark-github v-align-middle mx-1'
+            aria-label='GitHub'
+            viewBox='0 0 16 16'
+            version='1.1'
+            width='20'
+            role='img'
+          >
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+        </a>
+        and
+        <a href='https://education.github.com/experts' class='text-gray'>
+          <svg
+            class='octicon octicon-mortar-board v-align-middle mx-1'
+            aria-label='Students'
+            height='20'
+            version='1.1'
+            viewBox='0 0 16 16'
+            width='20'
+            role='img'
+          >
+            <path fill-rule="evenodd" d="M7.83 9.19L4 8c-4-8 0 1.5 0 2.5S5.8 12 8 12s4-.5 4-1.5V8L8.17 9.19a.73.73 0 0 1-.36 0h.02zm.28-6.39a.34.34 0 0 0-.2 0L.27 5.18a.35.35 0 0 0 0 .67L2 6.4v1.77c-.3.17-.5.5-.5.86 0 .19.05.36.14.5-.08.14-.14.31-.14.5v2.58c0 .55 2 .55 2 0v-2.58c0-.19-.05-.36-.14-.5.08-.14.14-.31.14-.5 0-.38-.2-.69-.5-.86V6.72l4.89 1.53c.06.02.14.02.2 0l7.64-2.38a.35.35 0 0 0 0-.67L8.1 2.81l.01-.01zM8.02 6c-.55 0-1-.22-1-.5s.45-.5 1-.5 1 .22 1 .5-.45.5-1 .5z"></path>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </footer>
@@ -3999,4 +4097,5 @@
     <script src='/preview-template/campus-experts/campus-experts.github.io/pr/3593/assets/render.js.liquid' type='text/javascript'></script>
   
 
+<script src='/preview-template/campus-experts/campus-experts.github.io/pr/3593/assets/search.js.liquid' type='text/javascript'></script>
 
