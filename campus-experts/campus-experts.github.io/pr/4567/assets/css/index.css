@@ -9,6 +9,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import 'Control.FullScreen.css';
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -12227,7 +12228,7 @@ a.tabnav-extra:hover {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 36px;
-  padding: 2px 16px;
+  padding: 10px 16px;
   transition: 0.3s;
   overflow: hidden;
 }
