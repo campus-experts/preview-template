@@ -12257,7 +12257,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 36px;
-  padding: 2px 16px;
+  padding: 10px 16px;
   transition: 0.3s;
   overflow: hidden;
 }
