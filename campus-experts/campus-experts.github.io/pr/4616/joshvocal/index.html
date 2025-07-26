@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function addPopover(badge) {
+  function showPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function removePopover(badge) {
+  function hidePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'

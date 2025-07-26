@@ -141,13 +141,13 @@
 
 
 <script type='text/javascript'>
-  function addPopover(badge) {
+  function showPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function removePopover(badge) {
+  function hidePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -219,7 +219,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -240,7 +240,7 @@
           </a>
         </div>
       
-        <div class='hex' id='0' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='0' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='0-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -261,7 +261,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='1' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='1-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -282,7 +282,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='2' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='2-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -303,7 +303,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='4' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='4-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -324,7 +324,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='5' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='5-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -345,7 +345,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='6' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='6-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -366,7 +366,7 @@
           </a>
         </div>
       
-        <div class='hex' id='7' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='7' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='7-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -387,7 +387,7 @@
           </a>
         </div>
       
-        <div class='hex' id='12' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='12' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='12-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -408,7 +408,7 @@
           </a>
         </div>
       
-        <div class='hex' id='14' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
+        <div class='hex' id='14' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
           <div class='Popover popover-mouseover' id='14-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
