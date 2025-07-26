@@ -21,7 +21,7 @@ L.tileLayer(
 render.features.forEach(function (feature) {
   L.geoJson(feature, {
     pointToLayer: function (feature, latlng) {
-      var altText = feature.properties && feature.properties.shortname ? 
+      const altText = feature.properties && feature.properties.shortname ? 
                     feature.properties.shortname + "'s location" : 
                     "Alumni location";
       return L.marker(latlng, { icon: createFlagIcon(), alt: altText, opacity: 1, title: altText });
