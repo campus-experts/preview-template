@@ -29,7 +29,7 @@ module.exports = {
   globalSetup: '<rootDir>/_scripts/jest-global-setup.ts',
   setupFilesAfterEnv: ['<rootDir>/_scripts/jest-setup.ts'],
   reporters:
-    process.env.CI === 'true'
+    process.env.GITHUB_EVENT_NAME === 'pull_request'
       ? [['@endbug/jest-pr-reporter', reporterOptions], 'summary']
       : ['default'],
 };
