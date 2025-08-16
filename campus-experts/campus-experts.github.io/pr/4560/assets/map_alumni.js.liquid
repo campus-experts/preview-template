@@ -2,9 +2,9 @@
 var map = L.map('map_alumni', {fullscreenControl: true}).setView([15, 15], 2);
 var createFlagIcon = function() {
   return L.icon({
-    iconUrl: '/assets/images/almuni_logo_outlined.png',
-    iconRetinaUrl: '/assets/images/almuni_logo_outlined.png',
-    shadowUrl: '/assets/images/marker-shadow.png',
+    iconUrl: '{{ site.baseurl }}/assets/images/almuni_logo_outlined.png',
+    iconRetinaUrl: '{{ site.baseurl }}/assets/images/almuni_logo_outlined.png',
+    shadowUrl: '{{ site.baseurl }}/assets/images/marker-shadow.png',
     iconSize: [41, 41], // size of the icon
     shadowSize: [41, 6], // size of the shadow
     iconAnchor: [10, 38], // point of the icon which will correspond to marker's location
@@ -35,7 +35,7 @@ function onEachFeature(feature, layer) {
   if (feature.properties) {
     layer.bindPopup(function () {
       var userstring =
-        'http://githubcampus.expert/' + feature.properties.username;
+        '{{ site.baseurl }}/' + feature.properties.username;
       var popupstring = feature.properties.shortname + "'s profile";
       return '<a href=' + userstring + '>' + popupstring + '</a>';
     });
