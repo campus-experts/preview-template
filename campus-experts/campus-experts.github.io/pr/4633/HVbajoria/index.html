@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -171,7 +171,7 @@
 </script>
 
 <div class='col-md-4 col-lg-3 float-md-left'>
-  <img class='avatar rounded-2 width-fit col-sm-6 col-md-12 d-block mx-auto' src='https://avatars3.githubusercontent.com/HVbajoria'>
+  <img loading='lazy' class='avatar rounded-2 width-fit col-sm-6 col-md-12 d-block mx-auto' src='https://avatars3.githubusercontent.com/HVbajoria'>
   <div class='py-3 text-center text-md-left'>
     <h1>
       <span class='d-block h2' style='line-height:30px;'
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -243,7 +243,7 @@
               <h4 class='mb-2'>Becoming an Expert</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/expert.svg' alt='Becoming an Expert' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/expert.svg' alt='Becoming an Expert' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to complete the application to become a GitHub Campus Expert.</p>
@@ -252,11 +252,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Becoming an Expert' class='avatar' height='60' src='/assets/images/badges/expert.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Becoming an Expert'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/expert.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -264,7 +271,7 @@
               <h4 class='mb-2'>Introduction</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/1.svg' alt='Introduction' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/1.svg' alt='Introduction' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>An introduction to Campus Experts and campus communities.</p>
@@ -273,11 +280,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Introduction' class='avatar' height='60' src='/assets/images/badges/1.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Introduction'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/1.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -285,7 +299,7 @@
               <h4 class='mb-2'>Inclusive Communities</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/15.svg' alt='Inclusive Communities' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/15.svg' alt='Inclusive Communities' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to start creating inclusive communities on campus.</p>
@@ -294,11 +308,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Inclusive Communities' class='avatar' height='60' src='/assets/images/badges/15.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Inclusive Communities'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/15.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -306,7 +327,7 @@
               <h4 class='mb-2'>Information Design</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/17.svg' alt='Information Design' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/17.svg' alt='Information Design' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to design workshops, worksheets, and other learning experiences from first principles.</p>
@@ -315,11 +336,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Information Design' class='avatar' height='60' src='/assets/images/badges/17.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Information Design'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/17.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -327,7 +355,7 @@
               <h4 class='mb-2'>Public Speaking</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/3.svg' alt='Public Speaking' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/3.svg' alt='Public Speaking' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to speak publicly, from writing a talk to wowing an audience.</p>
@@ -336,11 +364,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Public Speaking' class='avatar' height='60' src='/assets/images/badges/3.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Public Speaking'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/3.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -348,7 +383,7 @@
               <h4 class='mb-2'>Introduction to Git</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/11.svg' alt='Introduction to Git' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/11.svg' alt='Introduction to Git' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>Take your first steps with Git, versioning your files and collaborating with confidence.</p>
@@ -357,11 +392,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Introduction to Git' class='avatar' height='60' src='/assets/images/badges/11.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Introduction to Git'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/11.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -369,7 +411,7 @@
               <h4 class='mb-2'>Community Impact</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/2.svg' alt='Community Impact' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/2.svg' alt='Community Impact' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>Apply what you've learnt by making a plan for the future of your community.</p>
@@ -378,7 +420,14 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Community Impact' class='avatar' height='60' src='/assets/images/badges/2.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Community Impact'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/2.svg'
+              width='60'
+            >
           </a>
         </div>
       
@@ -549,6 +598,120 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
             
 
             
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
               
               <article class='story col-6 col-sm-4'>
                 <div class='border bg-white rounded-1 height-full'>
@@ -581,6 +744,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       New Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -629,11 +796,173 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/user-attachments/assets/f294282d-3576-44fd-8f7b-56c1fd2b0a99'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://unstop.com/hackathons/the-ai-hiring-show-tech-business-edition-rabbittai-1525713?lb=sQtXPRWl&utm_medium=Share&utm_source=ShortUrl&utm_campaign=null' target='_blank'>The AI Hiring Show Tech + Business Edition</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Brings together AI developers, marketers, product thinkers, problem solvers, and recruiters from top companies</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Hackathon
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Aug 07, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      New Delhi, India
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
           
             
 
             
 
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/user-attachments/assets/ce5db9ea-20a4-45b9-a3c5-ae72d41a9de1'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://tinyurl.com/linkinformatyka' target='_blank'>BRAND & BUILD :Showcasing You with GitHub and Linkedln</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>An exciting session to build a standout LinkedIn profile and showcase your projects on GitHub for career success.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Workshop
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Aug 03, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Online, India
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/user-attachments/assets/a638306c-5149-4fba-8fcb-c48cd5d5699a'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://shebuilds.hackculture.in/' target='_blank'>She Builds</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>SheBuilds is a women-centric hackathon designed to celebrate and empower women in technology.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Hackathon
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Aug 01, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      New Delhi, India
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
             
           
             
@@ -679,6 +1008,64 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       New Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/user-attachments/assets/a4439b9b-15af-4ec0-9d80-c4ab95652a5d'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://lu.ma/55ndzd41' target='_blank'>Build for Bharat</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>This event offers a unique platform to connect with like-minded individuals, exchange ideas, and gain valuable insights .</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Meetup
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Jul 29, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      New Delhi, India
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -744,15 +1131,25 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
                         <div class='social-logo'>
                           <a href='https://www.facebook.com/gdgcloudkol'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/facebook.svg' alt='Facebook logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
                           </a>
                         </div>
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/gdgcloudkol'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/twitter.svg' alt='Twitter logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
                           </a>
                         </div>
                       
@@ -760,7 +1157,11 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
                         <div class='social-logo'>
                           <a href='https://www.instagram.com/gdgcloudkol/'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/instagram.svg' alt='Instagram logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
                           </a>
                         </div>
                       
@@ -768,9 +1169,15 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
                         <div class='social-logo'>
                           <a href='https://www.linkedin.com/company/gdgcloudkol/posts/?feedView=all'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg' alt='LinkedIn logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -836,6 +1243,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -895,6 +1306,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -960,20 +1375,34 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
 
                       
 
                       
                         <div class='social-logo'>
                           <a href='https://www.linkedin.com/company/narinexus/'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg' alt='LinkedIn logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -1019,6 +1448,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       New Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -1120,15 +1553,23 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
 
                       
 
                       
                         <div class='social-logo'>
                           <a href='https://www.linkedin.com/company/hackneeti/'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg' alt='LinkedIn logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -1185,6 +1626,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Online, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -1250,6 +1695,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1312,15 +1761,23 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
 
                       
 
                       
                         <div class='social-logo'>
                           <a href='https://www.linkedin.com/in/harshavardhan-bajoria'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg' alt='LinkedIn logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -1392,6 +1849,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1445,6 +1906,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Delhi NCR, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -1504,15 +1969,23 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
 
                       
 
                       
                         <div class='social-logo'>
                           <a href='https://www.linkedin.com/in/azdevindia/'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg' alt='LinkedIn logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -1578,15 +2051,23 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
 
                       
 
                       
                         <div class='social-logo'>
                           <a href='https://www.linkedin.com/company/gdg-on-campus-iimt/posts/'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg' alt='LinkedIn logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -1670,6 +2151,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1741,6 +2226,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       New Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -1854,6 +2343,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1901,6 +2394,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       New Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -1978,6 +2475,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2043,6 +2544,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Online, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -2144,6 +2649,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2203,6 +2712,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Jaipur, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -2298,6 +2811,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2366,6 +2883,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2413,6 +2934,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       New Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -2496,6 +3021,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2543,6 +3072,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Online, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -2596,6 +3129,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2646,6 +3183,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2654,6 +3195,12 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -2699,6 +3246,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       New Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -2752,6 +3303,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2799,6 +3354,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -2852,6 +3411,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2899,6 +3462,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Gurugram, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -2955,6 +3522,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Noida, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3029,6 +3600,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Hooghly, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3136,6 +3711,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3183,6 +3762,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Noida, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3236,6 +3819,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3283,6 +3870,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Gurugram, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3378,6 +3969,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3440,6 +4035,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3487,6 +4086,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Noida, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3570,9 +4173,15 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://x.com/Hackcraft2o'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/twitter.svg' alt='Twitter logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
                           </a>
                         </div>
                       
@@ -3580,7 +4189,11 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
                         <div class='social-logo'>
                           <a href='https://www.instagram.com/hackcraft2.o?igsh=MTlvY3lraWkxeW9uaw=='>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/instagram.svg' alt='Instagram logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
                           </a>
                         </div>
                       
@@ -3588,9 +4201,15 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
                         <div class='social-logo'>
                           <a href='https://www.linkedin.com/in/hackcraft-by-team-sankalp-946821325'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg' alt='LinkedIn logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4633/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -3641,6 +4260,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Global, Global
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3772,6 +4395,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3819,6 +4446,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Kolkata, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3914,6 +4545,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3970,6 +4605,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3978,6 +4617,12 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -4053,6 +4698,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       Ludhiana, Punjab, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -4136,6 +4785,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -4144,6 +4797,12 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -4252,6 +4911,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -4311,6 +4974,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       New Delhi, India
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -4382,6 +5049,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -4390,6 +5061,42 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -7144,6 +7851,10 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -9660,8 +10371,6 @@ I’m Harshavardhan Bajoria, a CSE undergrad student at Amity University, Kolkat
     <div>
       <h2 class='border-bottom border-gray-light py-3 f3 text-normal mb-4'>Recent activity</h2>
       
-      
-        
       
         
       
