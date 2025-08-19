@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -171,7 +171,7 @@
 </script>
 
 <div class='col-md-4 col-lg-3 float-md-left'>
-  <img class='avatar rounded-2 width-fit col-sm-6 col-md-12 d-block mx-auto' src='https://kromate.github.io/portfolio/img/k1.png'>
+  <img loading='lazy' class='avatar rounded-2 width-fit col-sm-6 col-md-12 d-block mx-auto' src='https://kromate.github.io/portfolio/img/k1.png'>
   <div class='py-3 text-center text-md-left'>
     <h1>
       <span class='d-block h2' style='line-height:30px;'
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -243,7 +243,7 @@
               <h4 class='mb-2'>Becoming an Expert</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/expert.svg' alt='Becoming an Expert' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/expert.svg' alt='Becoming an Expert' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to complete the application to become a GitHub Campus Expert.</p>
@@ -252,11 +252,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Becoming an Expert' class='avatar' height='60' src='/assets/images/badges/expert.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Becoming an Expert'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/expert.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -264,7 +271,7 @@
               <h4 class='mb-2'>Introduction</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/1.svg' alt='Introduction' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/1.svg' alt='Introduction' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>An introduction to Campus Experts and campus communities.</p>
@@ -273,11 +280,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Introduction' class='avatar' height='60' src='/assets/images/badges/1.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Introduction'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/1.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -285,7 +299,7 @@
               <h4 class='mb-2'>Inclusive Communities</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/15.svg' alt='Inclusive Communities' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/15.svg' alt='Inclusive Communities' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to start creating inclusive communities on campus.</p>
@@ -294,11 +308,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Inclusive Communities' class='avatar' height='60' src='/assets/images/badges/15.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Inclusive Communities'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/15.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -306,7 +327,7 @@
               <h4 class='mb-2'>Information Design</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/17.svg' alt='Information Design' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/17.svg' alt='Information Design' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to design workshops, worksheets, and other learning experiences from first principles.</p>
@@ -315,11 +336,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Information Design' class='avatar' height='60' src='/assets/images/badges/17.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Information Design'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/17.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -327,7 +355,7 @@
               <h4 class='mb-2'>Public Speaking</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/3.svg' alt='Public Speaking' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/3.svg' alt='Public Speaking' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to speak publicly, from writing a talk to wowing an audience.</p>
@@ -336,11 +364,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Public Speaking' class='avatar' height='60' src='/assets/images/badges/3.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Public Speaking'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/3.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -348,7 +383,7 @@
               <h4 class='mb-2'>Introduction to Git</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/11.svg' alt='Introduction to Git' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/11.svg' alt='Introduction to Git' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>Take your first steps with Git, versioning your files and collaborating with confidence.</p>
@@ -357,11 +392,18 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Introduction to Git' class='avatar' height='60' src='/assets/images/badges/11.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Introduction to Git'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/11.svg'
+              width='60'
+            >
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -369,7 +411,7 @@
               <h4 class='mb-2'>Community Impact</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/2.svg' alt='Community Impact' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/2.svg' alt='Community Impact' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>Apply what you've learnt by making a plan for the future of your community.</p>
@@ -378,7 +420,14 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Community Impact' class='avatar' height='60' src='/assets/images/badges/2.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Community Impact'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/2.svg'
+              width='60'
+            >
           </a>
         </div>
       
@@ -638,6 +687,168 @@
             
 
             
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
               
               <article class='story col-6 col-sm-4'>
                 <div class='border bg-white rounded-1 height-full'>
@@ -673,11 +884,19 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://x.com/apiconflagos'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/twitter.svg' alt='Twitter logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -687,6 +906,48 @@
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -2913,6 +3174,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2921,6 +3186,24 @@
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -4025,17 +4308,29 @@
                       
                         <div class='social-logo'>
                           <a href='http://facebook.com/GitHubEducation'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/facebook.svg' alt='Facebook logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
                           </a>
                         </div>
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/dsc_unilag/status/1506713209914462211'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/twitter.svg' alt='Twitter logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -4969,17 +5264,29 @@
                       
                         <div class='social-logo'>
                           <a href='http://facebook.com/GitHubEducation'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/facebook.svg' alt='Facebook logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
                           </a>
                         </div>
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/dsc_unilag'>
-                            <img src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/twitter.svg' alt='Twitter logo'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4616/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -7341,8 +7648,6 @@
     <div>
       <h2 class='border-bottom border-gray-light py-3 f3 text-normal mb-4'>Recent activity</h2>
       
-      
-        
       
         
       

@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -171,7 +171,7 @@
 </script>
 
 <div class='col-md-4 col-lg-3 float-md-left'>
-  <img class='avatar rounded-2 width-fit col-sm-6 col-md-12 d-block mx-auto' src='https://avatars2.githubusercontent.com/u/9855136?s=460&v=4'>
+  <img loading='lazy' class='avatar rounded-2 width-fit col-sm-6 col-md-12 d-block mx-auto' src='https://avatars2.githubusercontent.com/u/9855136?s=460&v=4'>
   <div class='py-3 text-center text-md-left'>
     <h1>
       <span class='d-block h2' style='line-height:30px;'
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -243,7 +243,7 @@
               <h4 class='mb-2'>Becoming an Expert</h4>
               <div class='columns'>
                 <div class='column one-half'>
-                  <img src='/assets/images/badges/expert.svg' alt='Becoming an Expert' width='110px' height='110px'>
+                  <img loading='lazy' src='/assets/images/badges/expert.svg' alt='Becoming an Expert' width='110px' height='110px'>
                 </div>
                 <div class='column one-half'>
                   <p>How to complete the application to become a GitHub Campus Expert.</p>
@@ -252,7 +252,14 @@
             </div>
           </div>
           <a href='#' class='tooltipped-n avatar-group-item' itemprop='follows'>
-            <img alt='Becoming an Expert' class='avatar' height='60' src='/assets/images/badges/expert.svg' width='60'>
+            <img
+              loading='lazy'
+              alt='Becoming an Expert'
+              class='avatar'
+              height='60'
+              src='/assets/images/badges/expert.svg'
+              width='60'
+            >
           </a>
         </div>
       
@@ -6962,6 +6969,228 @@ jamming out to some K-pop with my HD 6XXs or playing the piano.</p>
 
             
           
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
           
             <div class='blankslate'>
               <h3>No recent events</h3>
@@ -6983,8 +7212,6 @@ jamming out to some K-pop with my HD 6XXs or playing the piano.</p>
     <div>
       <h2 class='border-bottom border-gray-light py-3 f3 text-normal mb-4'>Recent activity</h2>
       
-      
-        
       
         
       
