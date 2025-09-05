@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -561,6 +561,258 @@
 
             
 
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://www.acmbpdc.org/hackathon](https://community.cncf.io/events/details/cncf-cloud-native-security-lahore-presents-ctencf-birthday-bash-lahore' target='_blank'>cTENcf Birthday Bash Lahore</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Join us for the CNCF Birthday Bash Lahore on August 23, 2025, a student-friendly celebration packed with lightning talks, fun games, cloud-native insights, and exciting swag! Whether you’re just starting your journey in tech or already exploring Kubernetes and cloud technologies, this event is a great chance to learn, network, and connect with industry professionals and like-minded students—all while being part of CNCF’s global 10-year celebration.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          techfest
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Aug 23, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Lahore, PK
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
             
           
             
@@ -1029,6 +1281,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1175,6 +1431,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1228,6 +1488,10 @@
                       Lahore, Pakistan
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -1473,6 +1737,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1481,6 +1749,30 @@
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -2495,6 +2787,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2503,6 +2799,24 @@
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -3073,6 +3387,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3373,12 +3691,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/devconnect_tech'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3407,10 +3727,24 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -7675,8 +8009,6 @@
         
       
         
-      
-        
           
           <article class='py-3 card'>
             <time datetime='2023-02-18'>Feb 18, 2023</time>
@@ -7686,8 +8018,6 @@
             <p>Are you considering applying for the GitHub Campus Expert program, but have questions or concerns? We’re here to help!
 </p>
           </article>
-        
-      
         
       
         

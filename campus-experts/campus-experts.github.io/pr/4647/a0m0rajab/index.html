@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -908,6 +908,210 @@ social meida:</p>
             
 
             
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
               
               <article class='story col-6 col-sm-4'>
                 <div class='border bg-white rounded-1 height-full'>
@@ -940,6 +1144,10 @@ social meida:</p>
                       Istanbul, Turkey
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -1623,6 +1831,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1631,6 +1843,48 @@ social meida:</p>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -2897,6 +3151,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2944,6 +3202,10 @@ social meida:</p>
                       Istanbul, Turkey
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -2997,6 +3259,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3047,6 +3313,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3094,6 +3364,10 @@ social meida:</p>
                       Istanbul, Turkey
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3507,6 +3781,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3554,6 +3832,10 @@ social meida:</p>
                       Istanbul, Turkey
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -3607,6 +3889,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3615,6 +3901,18 @@ social meida:</p>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -4233,6 +4531,8 @@ social meida:</p>
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -4244,6 +4544,8 @@ social meida:</p>
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -4302,6 +4604,10 @@ social meida:</p>
                       Istanbul, Turkey
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -4400,6 +4706,10 @@ social meida:</p>
                       Sfax, Tunisia
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -5377,6 +5687,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -5589,6 +5903,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -5667,6 +5985,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -5733,6 +6055,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -5780,6 +6106,10 @@ social meida:</p>
                       Montasir, Tunisia
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -5881,6 +6211,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -5931,6 +6265,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -6036,7 +6374,7 @@ social meida:</p>
                   </div>
                   <div class='p-3 px-md-5 pb-md-4'>
                     <h2 class='mb-2 f4 lh-condensed'>
-                      <a href='hadithtech.com' target='_blank'>Create your own OpenAI</a>
+                      <a href='https://hadithtech.com' target='_blank'>Create your own OpenAI</a>
                     </h2>
                     <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
                       <p>This will be a live session workshop to talk about the usage of OpenAI API and how to benefit from it in your work, school and projects. The workshop will show few ideas: How to explore the API, how to use GitHub Pages, how to use GitHub copilot, how to use write HTML/CSS, how to debug a file and how to create a full product. This will be a live sessions going for a month.</p>
@@ -6056,6 +6394,10 @@ social meida:</p>
                       Madinah, KSA
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -6106,6 +6448,10 @@ social meida:</p>
                       Madinah, KSA
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -6162,6 +6508,10 @@ social meida:</p>
                       Istanbul, Turkey
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -6287,6 +6637,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -6352,6 +6706,10 @@ social meida:</p>
                       Online, Sudan
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -6951,6 +7309,10 @@ social meida:</p>
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -7058,6 +7420,10 @@ social meida:</p>
                       Istanbul, Turkey
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -7283,12 +7649,14 @@ social meida:</p>
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/YeniNesilARGE'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -7304,6 +7672,8 @@ social meida:</p>
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -7377,12 +7747,14 @@ social meida:</p>
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/ggk2020'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -7398,6 +7770,8 @@ social meida:</p>
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -7447,15 +7821,19 @@ social meida:</p>
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/weekeng19'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -7835,12 +8213,14 @@ social meida:</p>
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/YeniNesilARGE'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -7856,6 +8236,8 @@ social meida:</p>
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -8685,10 +9067,6 @@ social meida:</p>
     <div>
       <h2 class='border-bottom border-gray-light py-3 f3 text-normal mb-4'>Recent activity</h2>
       
-      
-        
-      
-        
       
         
       

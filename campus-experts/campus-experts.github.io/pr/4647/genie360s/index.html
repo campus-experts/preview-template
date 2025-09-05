@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -650,6 +650,180 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
             
 
             
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
               
               <article class='story col-6 col-sm-4'>
                 <div class='border bg-white rounded-1 height-full'>
@@ -685,12 +859,14 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/deepindaba'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -719,10 +895,66 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -2223,15 +2455,19 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/dsa_org'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -2241,6 +2477,18 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -2664,15 +2912,19 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/djcafrica'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -2808,6 +3060,10 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2816,6 +3072,24 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -7520,8 +7794,6 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
         
       
         
-      
-        
           
           <article class='py-3 card'>
             <time datetime='2023-11-06'>Nov 06, 2023</time>
@@ -7601,8 +7873,6 @@ Alex loves challenges , new experiences and collaborating in exciting projects t
             <p>
 </p>
           </article>
-        
-      
         
       
         

@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -593,6 +593,326 @@
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://2025.es.pycon.org/theme/images/logos/PYCONES_ORIGINAL_AZUL.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://2025.es.pycon.org/' target='_blank'>PyConES 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Spain’s top Python event is back in Seville! Lots of talks, workshops and speakers are waiting for you!</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Conference
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 17, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Seville, Spain
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/PyConEs'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/pycon_es/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://es.linkedin.com/company/python-espa%C3%B1a'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=100,width=800,height=800/event-covers/4t/b22d0cb9-d292-4b1b-ba1e-c07108df9102.jpg'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://ensemble.rodeo' target='_blank'>Ensemble 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>UK’s biggest celebration of maker culture, demos, talks, and workshops.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Techfest
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 04, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      London, UK
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://linuxupc.org' target='_blank'>Linux Install Party '25</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>A workshop to help first-year students at UPC install Linux and get started with Free Software.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Workshop
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Sep 17, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Barcelona, Spain
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/LinuxUPC'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://instagram.com/linuxupc'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
           
             
 
@@ -605,6 +925,190 @@
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/hPSLcN17/unnamed.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://hackthenorth.com/#hero' target='_blank'>Hack the North 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Canada’s largest hackathon, held every September at the University of Waterloo in Ontario.  It’s a 36-hour event where over 1,000 students from around the world gather to build tech projects anything from software and AI tools to hardware gadgets and robotics prototypes.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Hackathon
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Sep 12, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Waterloo, CAN
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/hackthenorth/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
           
             
 
@@ -1878,10 +2382,58 @@
 
             
           
+            
+
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=100,width=800,height=800/event-covers/p1/40e7e156-e57f-4e2e-bfe9-97b71713cd97.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://lu.ma/jt110z3r' target='_blank'>[crea]</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Live co-working session for makers, artists, and creators.</p>
 
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Meetup
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Sep 19, 2024
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Barcelona, Spain
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
             
           
             
@@ -7218,11 +7770,12 @@
 
             
           
+            
+
+            
+
+            
           
-            <div class='blankslate'>
-              <h3>No recent events</h3>
-              <p>Reach out to Jaume to see if they are organizing something 🍳</p>
-            </div>
           
         </div>
         <!-- // overflow fade // -->
@@ -7239,10 +7792,6 @@
     <div>
       <h2 class='border-bottom border-gray-light py-3 f3 text-normal mb-4'>Recent activity</h2>
       
-      
-        
-      
-        
       
         
       

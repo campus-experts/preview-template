@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -498,6 +498,288 @@
       
       <div class='position-relative overflow-hidden mb-6 mr-n3 mr-sm-n5 mr-lg-n3 mr-xl-n5 ml-n3 ml-sm-n5 ml-lg-n3 ml-xl-n5'>
         <div class='Collection d-flex flex-nowrap flex-items-stretch gutter-condensed overflow-auto px-3 px-sm-5 px-lg-3 px-xl-5 py-3'>
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/nV13gkQh/Captura-de-pantalla-2025-08-18-122918.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://www.meetup.com/my-bots-latam/events/310350507/' target='_blank'>VS Code Dev Days | Lima</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>perience. Join us at UPC San Isidro for a hands-on workshop with GitHub Education, MyBots LATAM, and IEEE UPC 🎉 Learn how to supercharge your coding with VS Code and GitHub Copilot, from basics to pro tips. Bring your laptop and code with us in real time!</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Workshop
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Sep 27, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Lima, Perú
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.facebook.com/ieee.cs.upc'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://instagram.com/ieee.cs.upc'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/ieee-cs-upc/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
           
             
 
@@ -903,6 +1185,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -1125,6 +1411,8 @@
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -1148,6 +1436,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -1337,6 +1627,8 @@
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -1351,112 +1643,12 @@
                       
 
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
-            
-          
-            
-
-            
-
             
           
             
@@ -2226,6 +2418,210 @@
                   <div class='event-image-hero'>
                     <img
                       class='event-hero'
+                      src='https://i.imgur.com/uJDYsGU.jpeg'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://lu.ma/u4qad0ej' target='_blank'>The Weekend Hack III</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Here’s TWH Third Edition! Dive into cybersecurity with workshops, lectures, and a CTF competition. 🚩</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Conference
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Sep 07, 2024
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Lima, Peru
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.facebook.com/ieee.cs.upc'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://instagram.com/ieee.cs.upc'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/ieee-cs-upc/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
                       src='https://i.imgur.com/0ZA3ROT.png'
                       alt=''
                     >
@@ -2265,6 +2661,8 @@
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -2289,10 +2687,30 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -3023,6 +3441,8 @@
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -3047,10 +3467,24 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -7551,10 +7985,6 @@
     <div>
       <h2 class='border-bottom border-gray-light py-3 f3 text-normal mb-4'>Recent activity</h2>
       
-      
-        
-      
-        
       
         
       

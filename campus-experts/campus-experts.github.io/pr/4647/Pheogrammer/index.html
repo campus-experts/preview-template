@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -2566,6 +2566,246 @@
             
 
             
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
               
               <article class='story col-6 col-sm-4'>
                 <div class='border bg-white rounded-1 height-full'>
@@ -2601,6 +2841,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -2609,6 +2853,12 @@
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -3383,6 +3633,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3391,6 +3645,12 @@
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -3703,6 +3963,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3897,15 +4161,19 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/gdgdaressalaam'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -3915,6 +4183,12 @@
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -4026,6 +4300,10 @@
                       Dar es salaam, Tanzania
                     </div>
                     <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
                       
 
                       
@@ -4293,6 +4571,10 @@
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -4499,15 +4781,19 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/GDGDarEsSalaam/'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -4787,6 +5073,8 @@
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -4798,6 +5086,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
 
                       
@@ -7833,8 +8123,6 @@
         
       
         
-      
-        
           
           <article class='py-3 card'>
             <time datetime='2022-04-30'>Apr 30, 2022</time>
@@ -7860,8 +8148,6 @@
             <p>LeGit is a Hackathon event which focuses on introducing people into the world of Version Controls and teaching them on how to perform and automate software development in a collaborative way by using GitHub.
 </p>
           </article>
-        
-      
         
       
         

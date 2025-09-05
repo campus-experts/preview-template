@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -528,6 +528,722 @@
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/jqJ55Z25/robochamp.jpg'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://diploma.tec.mx/actividad/506' target='_blank'>RoboChamp 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>RoboChamp is a unique hands-on experience with limited spots available, offering all materials at no cost. The event is designed for high school students, with or without prior knowledge of robotics. Participants will join multidisciplinary teams of four to put their skills to the test in a friendly robotics competition against peers from the same educational level. Throughout the competition, students will gain valuable knowledge in mechanics, electronics, programming, and mechatronic integration. In addition, all participants will receive an official certificate with curricular value.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Coding Competition
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Nov 29, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Monterrey, MX
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/roborregos/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/k46jNzp5/Open-Source-with-Git-Hub-1.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://forms.office.com/r/aHjiBSKgyR' target='_blank'>Open Source with GitHub</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Show students how the RoBorregos robotics team uses GitHub to manage open source projects. They’ll also learn the basics of contributing to open source and make their first contribution. 🚩</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Workshop
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 14, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Monterrey, MX
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/roborregos/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/T3j2T9GB/candidates2024.jpg'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://roborregos.com/candidates' target='_blank'>RoBorregos Candidates 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Annual recruiting event where students from all majors and semesters form teams of 4 to work on a robotics challenge.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Hackathon
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 11, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Monterrey, MX
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/roborregos/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/90H87Lcj/techtalks-banner.jpg'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://tbd' target='_blank'>RoBorregos Tech Talks 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Bring the world of technology closer to and promote it within the community, where experts, professionals, and students can share their ideas and experiences with people passionate about robotics.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Techfest
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 01, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Monterrey, MX
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/roborregos/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/hPSLcN17/unnamed.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://hackthenorth.com/#hero' target='_blank'>Hack the North 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Canada’s largest hackathon, held every September at the University of Waterloo in Ontario.  It’s a 36-hour event where over 1,000 students from around the world gather to build tech projects anything from software and AI tools to hardware gadgets and robotics prototypes.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Hackathon
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Sep 12, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Waterloo, CAN
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/hackthenorth/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/nV13gkQh/Captura-de-pantalla-2025-08-18-122918.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://aka.ms/vscode/devdays' target='_blank'>VS Code Dev Days | Monterrey</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Hands-on workshop where you’ll learn how to unlock the full potential of VS Code and GitHub Copilot and elevate your coding experience. Whether you’re a beginner or an experienced developer, this session will introduce you to AI-assisted development workflows, helping you write better code, faster.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Workshop
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Sep 02, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Monterrey, MX
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/roborregos/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/9F87V0fv/launch.jpg'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://roborregos.com/candidates' target='_blank'>RoBorregos Candidates Launch 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Candidates is our annual recruiting competition for new members of RoBorregos. Candidates Launch brings together over 100 attendees to reveal the robotics challenges they’ll be tackling over the next month. Their goal to impress us and secure their place in the team through our selection process.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Meetup
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Aug 29, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Monterrey, MX
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/roborregos/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.postimg.cc/sx7Y6rzT/redspot.jpg'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://docs.google.com/forms/d/e/1FAIpQLSepKPTKMYAVXwIAAApMcTGimL0cjvOfDvGFjJvz7alYDNnQrQ/viewform' target='_blank'>RedSpot 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>The goal of Red Spot is to have student groups present their activities and objectives over the two-day event, with the active participation of at least 500 students from the Tecnológico de Monterrey community. The goal is to generate direct interaction between groups and attendees, encouraging the integration of new members into group activities.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Meetup
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Aug 28, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Monterrey, MX
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/cgiv.mty/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4647/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
           
             
 
@@ -7189,11 +7905,12 @@
 
             
           
+            
+
+            
+
+            
           
-            <div class='blankslate'>
-              <h3>No recent events</h3>
-              <p>Reach out to Jocelyn to see if they are organizing something 🍳</p>
-            </div>
           
         </div>
         <!-- // overflow fade // -->
@@ -7210,10 +7927,6 @@
     <div>
       <h2 class='border-bottom border-gray-light py-3 f3 text-normal mb-4'>Recent activity</h2>
       
-      
-        
-      
-        
       
         
       
