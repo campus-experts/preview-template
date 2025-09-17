@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -543,6 +543,256 @@ I am very excited to share my knowledge with others, so if you need help, do not
       
       <div class='position-relative overflow-hidden mb-6 mr-n3 mr-sm-n5 mr-lg-n3 mr-xl-n5 ml-n3 ml-sm-n5 ml-lg-n3 ml-xl-n5'>
         <div class='Collection d-flex flex-nowrap flex-items-stretch gutter-condensed overflow-auto px-3 px-sm-5 px-lg-3 px-xl-5 py-3'>
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://www.facebook.com/tecorizaba# Required, Clickable in the main event card' target='_blank'>XIII Congreso Nacional de Ingenierias ITO</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>The Technological Institute of Orizaba will host the National Engineering Congress, bringing together students and academics nationwide. Focused on students, the event features workshops, courses, and keynote lectures by renowned experts. During the week, I will deliver a 16-hour workshop on Git, GitHub, and GitHub Copilot, equipping participants with practical skills for innovation and collaboration.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Workshop
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 20, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Orizaba, Ver, Mexico
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.facebook.com/tecorizaba'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                      
+                      
+
+                      
+
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
           
             
 
@@ -2052,12 +2302,14 @@ I am very excited to share my knowledge with others, so if you need help, do not
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/GitHubEducation'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -2086,10 +2338,24 @@ I am very excited to share my knowledge with others, so if you need help, do not
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -2268,12 +2534,14 @@ I am very excited to share my knowledge with others, so if you need help, do not
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://x.com/hackademymx'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -2302,10 +2570,18 @@ I am very excited to share my knowledge with others, so if you need help, do not
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -2754,12 +3030,14 @@ I am very excited to share my knowledge with others, so if you need help, do not
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://www.twitter.com/gdg_ixtac/'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -2788,10 +3066,18 @@ I am very excited to share my knowledge with others, so if you need help, do not
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -2922,6 +3208,10 @@ I am very excited to share my knowledge with others, so if you need help, do not
                       
 
                       
+                      
+                      
+
+                      
 
                       
 
@@ -3048,6 +3338,8 @@ I am very excited to share my knowledge with others, so if you need help, do not
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -3072,10 +3364,18 @@ I am very excited to share my knowledge with others, so if you need help, do not
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -3164,12 +3464,14 @@ I am very excited to share my knowledge with others, so if you need help, do not
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://www.twitter.com/gdgorizaba/'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3197,6 +3499,8 @@ I am very excited to share my knowledge with others, so if you need help, do not
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -3266,12 +3570,14 @@ I am very excited to share my knowledge with others, so if you need help, do not
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/GitHubEducation'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3299,6 +3605,8 @@ I am very excited to share my knowledge with others, so if you need help, do not
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -3410,12 +3718,14 @@ I am very excited to share my knowledge with others, so if you need help, do not
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/GitHubEducation'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3444,10 +3754,18 @@ I am very excited to share my knowledge with others, so if you need help, do not
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -8076,8 +8394,6 @@ This is a evento organized by GDG Orizaba and we talk about development web, mob
             <p>A series of hands-on workshops, where students will learn the basics of version control, how to create and work with branches, make pull requests, and resolve conflicts.
 </p>
           </article>
-        
-      
         
       
         

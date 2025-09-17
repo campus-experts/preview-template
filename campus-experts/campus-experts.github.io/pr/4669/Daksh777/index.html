@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -440,17 +440,13 @@
       <h2 class='border-bottom border-gray-light py3 f3 text-normal mb-4'>About Daksh</h2>
       <p><p>Hey there, Daksh here!</p>
 
-<p>I’m a software engineer, and a freelance UI/UX and graphic designer. I enjoy building clean, efficient, and user-friendly experiences - whether through code, design, or both :)</p>
+<p>I’m a freelance design engineer (software engineer and UI/UX + visual designer). I’ve been programming for the last 6 years and designing for the last 3, working across backend systems, cloud, AI tools, frontend, and product design.</p>
 
-<p>I work across backend, AI, and frontend technologies, and blend them with thoughtful design to create digital experiences that people love. My design focus includes UI/UX, branding, and visual storytelling.</p>
+<p>I’ve worked with startups, nonprofits, and tech communities to build products, dashboards, and scalable systems that people actually enjoy using.</p>
 
-<p>I also love open source and have contributed to projects that have gained significant traction.</p>
+<p>I also care deeply about open source and community. I organize PyDelhi (15K+ members) and help organize EuroPython, and have been part of multiple communities.</p>
 
-<p>Beyond coding and design, I’m passionate about tech communities. I help organize PyDelhi, running events and conferences, and I’ve been part of the GDG New Delhi core team, organizing events like DevFests and Cloud Community Days.</p>
-
-<p>When I’m not coding or designing, I’m probably reading about psychology, exploring new tech, or writing my thoughts on Medium.</p>
-
-<p>Always happy to chat—feel free to reach out if you want to talk about tech, psychology, design, or just cool ideas in general!</p>
+<p>If you like talking devtools, design systems, or just good ol’ Python things, let’s connect :)</p>
 
 <p>Connect with me on</p>
 <ul>
@@ -468,43 +464,23 @@
         </div>
       
         <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
+          product design
+        </div>
+      
+        <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
           visual & graphic design
         </div>
       
         <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          frontend development (javascript
+          frontend development
         </div>
       
         <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          reactjs)
+          backend development
         </div>
       
         <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          backend development (python
-        </div>
-      
-        <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          django
-        </div>
-      
-        <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          flask
-        </div>
-      
-        <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          fastapi)
-        </div>
-      
-        <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          ai/llm development (python
-        </div>
-      
-        <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          langchain
-        </div>
-      
-        <div class='d-inline-block flex-wrap bg-red-light py-1 px-2 rounded-1' style='margin-bottom: 5px'>
-          tensorflow)
+          ai/llm development
         </div>
       
     </div>
@@ -778,6 +754,252 @@
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://i.ibb.co/39Q2WBqC/Frame-40.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://www.commudle.com/communities/pydelhi/events/django-bash-django-x-pydelhi' target='_blank'>Django Bash</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Collaborative Django meetup by PyDelhi &amp; Django India to celebrate 20 years of Django!</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Meetup
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Aug 30, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Delhi, India
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/PyDelhi'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://instagram.com/pydelhi'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/pydelhi-community/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4669/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
           
             
 
@@ -7271,11 +7493,66 @@
 
             
           
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
           
-            <div class='blankslate'>
-              <h3>No recent events</h3>
-              <p>Reach out to Daksh to see if they are organizing something 🍳</p>
-            </div>
           
         </div>
         <!-- // overflow fade // -->
@@ -7292,8 +7569,6 @@
     <div>
       <h2 class='border-bottom border-gray-light py-3 f3 text-normal mb-4'>Recent activity</h2>
       
-      
-        
       
         
       
