@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -444,7 +444,7 @@
 
 <p>With an avid passion for learning, he is constantly upgrading his coding skills through books, articles, YouTube videos, and Massive Open Online Courses 🎓</p>
 
-<p>He has founded an Open Source organization called <a href="https://github.com/yfosp" target="_blank">Your First Open Source Project</a> - with over 300+ members from ~50 different countries worldwide. Through the organization, he advocates for the creation of safe community spaces that foster both diversity &amp; inclusivity, regardless of your technical abilities 😊</p>
+<p>He has founded an Open Source organization called <a href="https://github.com/yfosp" target="_blank">Your First Open Source Project</a> - with over 350+ members from ~50 different countries worldwide. Through the organization, he advocates for the creation of safe community spaces that foster both diversity &amp; inclusivity, regardless of your technical abilities 😊</p>
 
 <p>As the <a href="https://www.sp.edu.sg/" target="_blank">1st GitHub Campus Expert for Singapore Polytechnic</a>, he provided technical and non-technical support to the GitHub team by 💪:</p>
 
@@ -463,10 +463,10 @@
         </a>
     </li>
     <li>
-      Fixing &gt;10 bugs on the
+      Fixing 10+ bugs on the
         <a href="https://githubcampus.expert/" target="_blank">
           GitHub Campus Experts website
-        </a>
+        </a> and documentation pages
     </li>
   </ul>
 </p>
@@ -826,6 +826,326 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://daydream.hackclub.com/hanoi' target='_blank'>Daydream Hanoi Hack Club 2025</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Join us for an exciting hackathon experience at Daydream Hanoi Hack Club 2025! Collaborate, innovate, and create amazing game development projects with fellow enthusiasts. Don’t miss out on this opportunity to showcase your skills and connect with like-minded individuals.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Hackathon
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Sep 27, 2025
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Hanoi, Vietnam
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='http://facebook.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/githubeducation/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/github/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://discord.com/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/discord.svg'
+                              alt='Discord logo'
+                            >
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
           
             
 
@@ -1979,10 +2299,108 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
 
             
           
+            
+
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://githubfieldday.com/malaysia2024/' target='_blank'>GitHub Field Day Malaysia 2024</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>GitHub Field Day Malaysia 2024 is a conference that gathers local tech leaders for a fun and meaningful day of focus groups, round table sessions, and networking. The event aims to bring together diverse community builders to share insights, exchange ideas, and strengthen collaboration within the tech ecosystem.</p>
 
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Conference
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 12, 2024
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Kuala Lumpur, Malaysia
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='http://facebook.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/githubeducation/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/github/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://discord.com/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/discord.svg'
+                              alt='Discord logo'
+                            >
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
             
           
             
@@ -2543,10 +2961,108 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
 
             
           
+            
+
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://www.holopin.io/opensource' target='_blank'>Holopin Partnership 2024</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Holopin Partnership 2024 is a collaboration between YFOSP and Holopin that recognizes and rewards every open-source contributor and maintainer by providing them with digital badges that can be displayed on their GitHub profiles or personal websites</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Partnership
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Jan 26, 2024
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Virtual, Remote
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='http://facebook.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/githubeducation/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
 
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/github/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://discord.com/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/discord.svg'
+                              alt='Discord logo'
+                            >
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
             
           
             
@@ -2675,10 +3191,108 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
 
             
           
+            
+
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://githubuniverse.com/' target='_blank'>GitHub Universe 2023</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>GitHub Universe 2023 is the premier annual conference for developers, featuring keynotes, sessions, and workshops on the latest trends in software development, AI, and more.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Conference
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Nov 08, 2023
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      San Francisco, USA
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='http://facebook.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
 
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/githubeducation/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/github/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://discord.com/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/discord.svg'
+                              alt='Discord logo'
+                            >
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
             
           
             
@@ -2825,10 +3439,108 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
 
             
           
+            
+
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://hacktoberfest.com/' target='_blank'>DigitalOcean Hacktoberfest 2023</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Join Your First Open Source Project (YFOSP) for DigitalOcean Hacktoberfest 2023, a month-long global hackathon dedicated to building and celebrating open source. Throughout October, developers from around the world come together to collaborate, contribute to open-source projects, and earn rewards. This year, our hackathon mission is clear - to refine and enhance our very own community-powered website together.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Hackathon
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 01, 2023
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Virtual, Remote
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='http://facebook.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/githubeducation/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/github/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
 
+                      
+                        <div class='social-logo'>
+                          <a href='https://discord.com/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/discord.svg'
+                              alt='Discord logo'
+                            >
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
             
           
             
@@ -3784,6 +4496,104 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://hacktoberfest.com/' target='_blank'>DigitalOcean Hacktoberfest 2022</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Join Your First Open Source Project (YFOSP) for DigitalOcean Hacktoberfest 2022, a month-long global hackathon dedicated to building and celebrating open source. Throughout October, developers from around the world come together to collaborate, contribute to open-source projects, and earn rewards. This year, our hackathon mission is clear - to design, develop, and launch our very own community-powered website together.</p>
+
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Hackathon
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Oct 01, 2022
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Virtual, Remote
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='http://facebook.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/githubeducation/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/github/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://discord.com/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/discord.svg'
+                              alt='Discord logo'
+                            >
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
+            
           
             
 
@@ -3977,10 +4787,108 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
 
             
           
+            
+
             
 
             
+              
+              <article class='story col-6 col-sm-4'>
+                <div class='border bg-white rounded-1 height-full'>
+                  <div class='event-image-hero'>
+                    <img
+                      class='event-hero'
+                      src='https://github.com/campus-experts.png'
+                      alt=''
+                    >
+                  </div>
+                  <div class='p-3 px-md-5 pb-md-4'>
+                    <h2 class='mb-2 f4 lh-condensed'>
+                      <a href='https://github.com/yfosp' target='_blank'>Your First Open Source Project 2022</a>
+                    </h2>
+                    <div class='text-gray mb-2 ws-normal text-limited' itemprop='description'>
+                      <p>Step into the world of open source with a welcoming community that helps you learn, contribute, and grow. Through hands-on projects and collaborative learning, we guide you in making meaningful contributions that create real impact. We also host online events featuring guest speakers who share insights on open source contributions, career transitions into tech, and other inspiring topics.</p>
 
+                    </div>
+                    <div>
+                      <div class='d-flex f6'>
+                        <p class='d-inline-block mr-4'>
+                          Community
+                        </p>
+                        <time class='d-inline-block mr-4'>
+                          Jun 01, 2022
+                        </time>
+                      </div>
+                    </div>
+                    <div class='d-flex flex-column flex-justify-end flex-auto f6 text-gray mt-1'>
+                      Virtual, Remote
+                    </div>
+                    <div class='d-flex flex-row flex-justify-start flex-auto f6 text-gray mt-3 socials-row'>
+                      
+                        <div class='social-logo'>
+                          <a href='http://facebook.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/facebook.svg'
+                              alt='Facebook logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://x.com/GitHubEducation'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
+                            >
+                          </a>
+                        </div>
+                      
+                      
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.instagram.com/githubeducation/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/instagram.svg'
+                              alt='Instagram logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://www.linkedin.com/company/github/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/linkedin.svg'
+                              alt='LinkedIn logo'
+                            >
+                          </a>
+                        </div>
+                      
+
+                      
+                        <div class='social-logo'>
+                          <a href='https://discord.com/'>
+                            <img
+                              loading='lazy'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/discord.svg'
+                              alt='Discord logo'
+                            >
+                          </a>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </article>
             
           
             
@@ -7427,11 +8335,12 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
 
             
           
+            
+
+            
+
+            
           
-            <div class='blankslate'>
-              <h3>No recent events</h3>
-              <p>Reach out to Melvin to see if they are organizing something 🍳</p>
-            </div>
           
         </div>
         <!-- // overflow fade // -->
@@ -7537,8 +8446,6 @@ He is also the <a href="https://www.nus.edu.sg/" target="_blank">1st Singaporean
             <p>During GitHub Universe 2023, I was one of 5 GitHub Campus Experts selected as a speaker for the ‘Ask Me Anything’ (AMA) Panel Discussion for GitHub Partners.
 </p>
           </article>
-        
-      
         
       
         

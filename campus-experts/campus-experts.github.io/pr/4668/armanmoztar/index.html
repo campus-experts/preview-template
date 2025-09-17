@@ -157,13 +157,13 @@
 
 
 <script type='text/javascript'>
-  function showPopover(badge) {
+  function addPopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'visible';
   }
 
-  function hidePopover(badge) {
+  function removePopover(badge) {
     var badgeid = badge.id + '-popover';
     var popover = document.getElementById(badgeid);
     popover.style.visibility = 'hidden';
@@ -235,7 +235,7 @@
   <div class='py-3 clearfix centered'>
     <div class='hex-layout'>
       
-        <div class='hex' id='expert' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='expert' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='expert-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -263,7 +263,7 @@
           </a>
         </div>
       
-        <div class='hex' id='1a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='1a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='1a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -291,7 +291,7 @@
           </a>
         </div>
       
-        <div class='hex' id='2a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='2a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='2a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -319,7 +319,7 @@
           </a>
         </div>
       
-        <div class='hex' id='3a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='3a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='3a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -347,7 +347,7 @@
           </a>
         </div>
       
-        <div class='hex' id='4a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='4a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='4a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -375,7 +375,7 @@
           </a>
         </div>
       
-        <div class='hex' id='5a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='5a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='5a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -403,7 +403,7 @@
           </a>
         </div>
       
-        <div class='hex' id='6a' onmouseout='hidePopover(this)' onmouseover='showPopover(this)'>
+        <div class='hex' id='6a' onmouseout='removePopover(this)' onmouseover='addPopover(this)'>
           <div class='Popover popover-mouseover' id='6a-popover'>
             <div
               class='Popover-message Popover-message--large Popover-message--bottom-left p-4 mx-auto mb-2 text-left Box box-shadow-large'
@@ -550,12 +550,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -583,6 +585,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -640,12 +644,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://x.com/UBCBizTech'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -673,6 +679,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -730,12 +738,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -764,10 +774,24 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -820,12 +844,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -854,10 +880,78 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -928,12 +1022,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://x.com/UBCBizTech'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -962,10 +1058,18 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -1024,12 +1128,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://x.com/github'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -1058,10 +1164,102 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -1774,6 +1972,8 @@
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -1797,6 +1997,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -1896,12 +2098,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -1929,6 +2133,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -2136,12 +2342,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -2169,6 +2377,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -2334,6 +2544,8 @@
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -2357,6 +2569,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -2582,6 +2796,8 @@
                       
 
                       
+                      
+                      
 
                       
                         <div class='social-logo'>
@@ -2605,6 +2821,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -2716,12 +2934,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -2750,10 +2970,42 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -3334,12 +3586,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3368,10 +3622,18 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -3502,12 +3764,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3535,6 +3799,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -3604,12 +3870,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3637,6 +3905,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -3694,12 +3964,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/ubccsss'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3727,6 +3999,8 @@
                             >
                           </a>
                         </div>
+                      
+
                       
                     </div>
                   </div>
@@ -3868,12 +4142,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/nwplusubc?lang=en'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3902,10 +4178,18 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
             
           
             
@@ -3964,12 +4248,14 @@
                       
 
                       
+                      
+                      
                         <div class='social-logo'>
                           <a href='https://twitter.com/ubccsss'>
                             <img
                               loading='lazy'
-                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/twitter.svg'
-                              alt='Twitter logo'
+                              src='/preview-template/campus-experts/campus-experts.github.io/pr/4668/assets/images/social-logos/x.svg'
+                              alt='X logo'
                             >
                           </a>
                         </div>
@@ -3998,10 +4284,24 @@
                           </a>
                         </div>
                       
+
+                      
                     </div>
                   </div>
                 </div>
               </article>
+            
+          
+            
+
+            
+
+            
+          
+            
+
+            
+
             
           
             
@@ -8813,8 +9113,6 @@
             <p>
 </p>
           </article>
-        
-      
         
       
         
