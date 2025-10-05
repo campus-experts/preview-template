@@ -168,11 +168,10 @@
         id='cluster-radius-slider' 
         min='10' 
         max='200' 
-        value='50' 
         class='width-auto mr-3'
         style='width: 200px;'
       >
-      <span id='cluster-radius-value' class='text-gray'>50px</span>
+      <span id='cluster-radius-value' class='text-gray'></span>
     </div>
   </div>
   <div class='border mb-3'>
@@ -5990,6 +5989,9 @@
 </div>
 
 <script>
+  // Default cluster radius constant
+  const DEFAULT_CLUSTER_RADIUS = 50;
+
   var render = {
     "type": "FeatureCollection",
     "features": [
@@ -10765,7 +10767,7 @@
 
   // Initialize the marker cluster group with default radius
   var markers = L.markerClusterGroup({
-    maxClusterRadius: 50,
+    maxClusterRadius: DEFAULT_CLUSTER_RADIUS,
   });
 
   // Add each marker to the cluster group instead of directly to the map
@@ -10803,6 +10805,10 @@
   // Handle cluster radius slider changes
   const slider = document.getElementById('cluster-radius-slider');
   const valueDisplay = document.getElementById('cluster-radius-value');
+
+  // Set initial values using the constant
+  slider.value = DEFAULT_CLUSTER_RADIUS;
+  valueDisplay.textContent = DEFAULT_CLUSTER_RADIUS + 'px';
 
   slider.addEventListener('input', function() {
     const newRadius = parseInt(this.value);
