@@ -12239,9 +12239,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
   transition: color 0.3s;
 }
 
-#navbar nav a {
+#navbar nav a:not(:last-child) {
   transition: all 0.3s ease;
-  border-radius: 3px;
+}
+@media (min-width: 768px) {
+  #navbar nav a:not(:last-child) {
+    border-radius: 3px;
+  }
 }
 #navbar #mobile-nav-toggle {
   border: none;
@@ -12270,11 +12274,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
   border-radius: 3px;
 }
 
-@media only screen and (max-width: 768px) {
-  #navbar nav a:not(:last-child) {
-    border-radius: 0;
-  }
-}
 .nav-active {
   background-color: rgba(255, 255, 255, 0.2) !important;
 }

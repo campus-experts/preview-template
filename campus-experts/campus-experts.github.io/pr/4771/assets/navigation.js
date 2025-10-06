@@ -15,11 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
       // Update toggle icon
       const icon = mobileToggle.querySelector('svg');
       if (isExpanded) {
-        icon.outerHTML =
-          '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>';
+        icon.outerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`;
       } else {
-        icon.outerHTML =
-          '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>';
+        icon.outerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>`;
       }
     });
 
@@ -33,8 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Reset toggle icon
         const icon = mobileToggle.querySelector('svg');
-        icon.outerHTML =
-          '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>';
+        icon.outerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>`;
       });
     });
   }
@@ -81,9 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Reset toggle icon
       const icon = mobileToggle.querySelector('svg');
-      icon.innerHTML = `<path d="M4 5h16"/>
-            <path d="M4 12h16"/>
-            <path d="M4 19h16"/>`;
+      icon.outerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>`;
     }
   });
 
@@ -100,9 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Reset toggle icon and focus
       const icon = mobileToggle.querySelector('svg');
-      icon.innerHTML = `<path d="M4 5h16"/>
-            <path d="M4 12h16"/>
-            <path d="M4 19h16"/>`;
+      icon.outerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>`;
       mobileToggle.focus();
     }
   });
