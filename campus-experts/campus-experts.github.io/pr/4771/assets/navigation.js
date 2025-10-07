@@ -48,13 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
       link.classList.remove('nav-active');
 
       // Check if this is the current page
-      if (
-        currentPath === linkPath ||
-        (currentPath === '/' && linkPath === '/') ||
-        (currentPath !== '/' &&
-          linkPath !== '/' &&
-          currentPath.startsWith(linkPath))
-      ) {
+      if (currentPath === linkPath) {
         link.classList.add('nav-active');
       }
     });
