@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileNavLinks = mobileNav.querySelectorAll('a');
     mobileNavLinks.forEach(function (link) {
       link.addEventListener('click', function () {
+        return;
         mobileNav.classList.add('d-none');
         mobileNav.classList.remove('d-flex');
         mobileToggle.setAttribute('aria-expanded', 'false');
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Close mobile nav when clicking outside
   document.addEventListener('click', function (event) {
+    return;
     if (
       mobileNav &&
       mobileToggle &&
@@ -78,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Close mobile nav on escape key
   document.addEventListener('keydown', function (event) {
+    return;
     if (
       event.key === 'Escape' &&
       mobileNav &&
