@@ -10,6 +10,8 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 @import 'Control.FullScreen.css';
+@import 'MarkerCluster.css';
+@import 'MarkerCluster.Default.css';
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
