@@ -1,0 +1,20 @@
+{
+  "name": "campus-experts.github.io",
+  "scripts": {},
+  "env": {
+    "LANG": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
