@@ -10,6 +10,8 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 @import 'Control.FullScreen.css';
+@import 'MarkerCluster.css';
+@import 'MarkerCluster.Default.css';
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -12235,6 +12237,45 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .story-title {
   transition: color 0.3s;
+}
+
+#navbar nav a:not(:last-child) {
+  transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  #navbar nav a:not(:last-child) {
+    border-radius: 3px;
+  }
+}
+#navbar #mobile-nav-toggle {
+  border: none;
+  background: none;
+}
+#navbar #mobile-nav-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#navbar #mobile-nav-toggle:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+#navbar #mobile-nav-toggle svg {
+  pointer-events: none;
+}
+#navbar #mobile-nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+#navbar #mobile-nav a:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#navbar #mobile-nav a:not(:last-child):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#navbar #mobile-nav a:not(:last-child):last-child {
+  border-bottom: none;
+  border-radius: 3px;
+}
+
+.nav-active {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .blockquote {
