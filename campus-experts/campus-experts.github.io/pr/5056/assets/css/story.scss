@@ -1,0 +1,47 @@
+.story {
+  min-width: 280px;
+  max-width: 280px; // A really dumb hack because of how the scrollers work
+}
+
+.story--large {
+  @include breakpoint(lg) {
+    min-width: 330px;
+    max-width: 400px;
+  }
+}
+
+.story--stagger {
+  &:nth-child(even) {
+    margin-top: -$spacer-3;
+  }
+
+  &:nth-child(odd) {
+    margin-bottom: -$spacer-3;
+  }
+}
+
+.story-link {
+  transition: transform 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.025);
+
+    .story-title {
+      color: $text-orange-light !important;
+      text-decoration: underline;
+    }
+  }
+}
+
+.story-link--customer {
+  &:hover {
+    .story-title {
+      color: $purple-500 !important;
+    }
+  }
+}
+
+.story-title {
+  transition: color 0.3s;
+}
