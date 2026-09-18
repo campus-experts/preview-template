@@ -1,0 +1,5 @@
+# Default owners for this repository
+* @campus-experts/program-staff
+
+# Only program staff may change CI/CD workflows
+/.github/workflows/ @campus-experts/program-staff
